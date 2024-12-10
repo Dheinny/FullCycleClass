@@ -16,6 +16,7 @@ FROM php:7.4-fpm-alpine
 WORKDIR /var/www
 RUN rm -rf /var/www/html
 COPY --from=builder /var/www/laravel .
+#RUN ln -s public lara     ----- Link simbolico inutil que o Wesley fez no video. Serve se quiser mudar o caminho default de /var/www/public no nginx para outro nome.
 RUN chown -R www-data:www-data /var/www
 
 EXPOSE 9000

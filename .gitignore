@@ -4,3 +4,5 @@ Docker/mysql
 
 teste_dir/
 teste_dir2/*
+!teste_dir2/file2.txt
+
